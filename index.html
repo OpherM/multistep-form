@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="sideBar" class="col-sm-4">
+          <div class="side-line">
+            <div class="content">
+              <button class="number active number1">1</button>
+              <div class="two">
+                <p>STEP 1</p>
+                <h3>YOUR INFO</h3>
+              </div>
+            </div>
+            <div class="content">
+              <button class="number number2">2</button>
+              <div class="two">
+                <p>STEP 2</p>
+                <h3>SELECT PLAN</h3>
+              </div>
+            </div>
+            <div class="content">
+              <button class="number number3">3</button>
+              <div class="two">
+                <p>STEP 3</p>
+                <h3>ADD-ONS</h3>
+              </div>
+            </div>
+            <div class="content">
+              <button class="number number4">4</button>
+              <div class="two">
+                <p>STEP 4</p>
+                <h3>SUMMARY</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page-1 -->
+        <div id="page-1" class="page page-1 col-sm-8">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address and phone number</p>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="e.g. +1 234 567 890"
+              />
+              <div class="invalid-feedback">Enter a valid phone</div>
+            </div>
+          </form>
+
+          <div class="buttons">
+            <button class="butn step-one-btn btn-1" id="prev">Go Back</button>
+            <button class="butn step-one-btn-2 btn-2" id="next">
+              Next Step
+            </button>
+          </div>
+        </div>
+
+        <!-- Select Plan - Page 2 -->
+        <div id="page-2" class="page page-2 col-sm-8">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing</p>
+          <div class="card-tile">
+            <div class="tiles">
+              <img src="/images/icon-arcade.svg" alt="" />
+              <h2>Arcade</h2>
+              <p>$9/mo</p>
+            </div>
+            <div class="tiles">
+              <img src="/images/icon-advanced.svg" alt="" />
+              <h2>Advanced</h2>
+              <p>$12/mo</p>
+            </div>
+            <div class="tiles">
+              <img src="/images/icon-pro.svg" alt="" />
+              <h2>Pro</h2>
+              <p>$15/mo</p>
+            </div>
+          </div>
+          <div class="switch">
+            <h4>Monthly</h4>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+              />
+            </div>
+            <h5>Yearly</h5>
+          </div>
+
+          <div class="buttons">
+            <button class="butn btn-1" id="prev">Go Back</button>
+            <button class="butn btn-2" id="next">Next Step</button>
+          </div>
+        </div>
+
+        <!-- Page-3 -->
+        <div id="page-3" class="page page-3 col-sm-8">
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience</p>
+          <div class="card-check">
+            <div class="checks">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <div class="services">
+                <h4>Online service</h4>
+                <p>Access to multilayer games</p>
+              </div>
+              <p class="diff">+$10/yr</p>
+            </div>
+            <div class="checks">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <div class="services">
+                <h4>Larger storage</h4>
+                <p>Extra 1TB of cloud save</p>
+              </div>
+              <p class="diff">+20/yr</p>
+            </div>
+            <div class="checks">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <div class="services">
+                <h4>Customizable profile</h4>
+                <p>Custom theme on your profile</p>
+              </div>
+              <p class="diff">+$20/yr</p>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button class="butn btn-1" id="prev">Go Back</button>
+            <button class="butn btn-2" id="next">Next Step</button>
+          </div>
+        </div>
+
+        <!-- Part-4 -->
+        <div id="page-4" class="page page-4 col-sm-8">
+          <h1>Finishing up</h1>
+          <p>Double check everything looks OK before confirming</p>
+          <div class="check-out">
+            <div class="checked">
+              <div class="serviced">
+                <h4>Arcade (Monthly)</h4>
+                <p>Change</p>
+              </div>
+              <p>+$9/mo</p>
+            </div>
+            <div class="line"></div>
+            <div class="checked">
+              <div class="serviced">
+                <p>Online service</p>
+              </div>
+              <p>+$1/mo</p>
+            </div>
+            <div class="checked">
+              <div class="serviced">
+                <p>Online service</p>
+              </div>
+              <p>+$2/mo</p>
+            </div>
+          </div>
+          <div class="total">
+            <p>Total (per month)</p>
+            <p class="diff">+$12/mo</p>
+          </div>
+
+          <div class="buttons">
+            <button class="butn btn-1">Go Back</button>
+            <button class="butn btn-2 confirm">Confirm</button>
+          </div>
+        </div>
+
+        <!-- Part 5 -->
+        <div id="page-5" class="page page-5 col-sm-8">
+          <img src="/images/icon-thank-you.svg" alt="Thank you" />
+          <h6>Thank you!</h6>
+          <p>
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
