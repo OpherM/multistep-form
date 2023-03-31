@@ -16,9 +16,9 @@ function navigatePage(newPage) {
 }
 
 function updatePage() {
-  pages.forEach((page, index) => {
-    page.classList[index < currentPage ? "add" : "remove"]("active");
-  });
+//   pages.forEach((page, index) => {
+//     page.classList[index < currentPage ? "add" : "remove"]("active");
+//   });
 
   // show or hide prevBtn and nextBtn based on current page number
   const prevBtn = document.querySelector(`#prev-${currentPage}`);
@@ -31,29 +31,6 @@ function updatePage() {
   if (nextBtn) {
     nextBtn.style.display = currentPage === pages.length ? "none" : "block";
   }
-}
-
-function nextPage() {
-  if (currentPage === 4) {
-    navigatePage(5);
-  } else {
-    const steps = [stepOne, stepTwo, stepThree, stepFour];
-    const index = currentPage - 1;
-
-    if (index < steps.length) {
-      steps[index].click();
-    }
-
-    currentPage += 1;
-
-    navigatePage(currentPage);
-  }
-}
-
-function prevPage() {
-  currentPage -= 1;
-
-  navigatePage(currentPage);
 }
 
 const stepOne = document.querySelector(".number1"),

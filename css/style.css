@@ -42,7 +42,7 @@ body {
 
 .page-5 {
     width: 65%;
-    display: none !important;
+    display: none;
 }
 
 .side-line {
@@ -62,7 +62,7 @@ body {
 }
 
 .active {
-    background-color: lightblue !important;
+    background-color: white !important;
 }
 
 .side-line .content .number {
@@ -233,12 +233,12 @@ h4, h5 {
     padding: 15px;
 }
 
-.page-5 {
+.page-5-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto 0;
     gap: 10px;
+    margin: 150px auto;
 }
 
 h6 {
