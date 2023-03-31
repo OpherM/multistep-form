@@ -17,7 +17,8 @@ const updatePage = (e) => {
     // console.log(currentPage);
 
     pages.forEach((page, index) => {
-        page.classList[`${index < currentPage ? 'add' : 'remove'}`]('');
+        // page.classList[`${index < currentStep ? 'add' : 'remove'}`]('active');
+        console.log(pages);
     });
 };
 
